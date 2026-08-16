@@ -7,51 +7,35 @@
     <style>
     html,
     body {
-      font: 16px sans-serif;
+      font: 16px system-ui, sans-serif;
       margin: 0;
       padding: 0;
     }
 
-    body {
-      width: 75rem;
-      margin: 0 auto;
-    }
-
     article {
-      margin: 1rem 0.5rem 0 auto;
+      margin: 1rem auto;
       writing-mode: vertical-rl;
     }
 
     p {
-      white-space: nowrap;
+      line-height: 1.25;
       margin-block-start: 0;
+      white-space: nowrap;
     }
 
-    @media screen and (max-width: 75rem) {
-      body {
-        width: 37.5rem;
-      }
-
+    @media screen and (max-width: 70rem) {
       article {
         column-count: 2;
       }
     }
 
-    @media screen and (max-width: 37.5rem) {
-      body {
-        width: 25rem;
-      }
-
+    @media screen and (max-width: 35rem) {
       article {
         column-count: 3;
       }
     }
 
     @media screen and (max-width: 25rem) {
-      body {
-        width: 20rem;
-      }
-
       article {
         column-count: 4;
       }
